@@ -83,7 +83,7 @@ void FormeGeometrique::dessiner() const
 		//do
 		//{
 			//char requete[L];
-			cout << "Tapez la chaine a mettre en majuscule ou tapez \"quitter\" : ";
+			//cout << "Tapez la chaine a mettre en majuscule ou tapez \"quitter\" : " << endl;
 			//cin >> requete;
 
 			string forme = string(* this);
@@ -124,7 +124,7 @@ void FormeGeometrique::dessiner() const
 		if (r)
 			throw Erreur("La fermeture du socket a échoué");
 		WSACleanup();
-		cout << "Arrêt normal du client" << endl;
+		cout << "Arret normal du client" << endl;
 	}
 	catch (Erreur erreur)
 	{

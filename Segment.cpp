@@ -46,5 +46,9 @@ void Segment::accept(Visitor * v)
 
 Segment::operator string() const
 {
-	return string("Seg");
+	string str = "Seg "
+		+ to_string(point1.getX()) + " " + to_string(point1.getY()) + " "
+		+ to_string(point2.getX()) + " " + to_string(point2.getY());
+
+	return str;
 }
