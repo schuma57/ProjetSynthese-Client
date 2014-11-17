@@ -17,8 +17,15 @@ public:
 	Triangle(const string &, int a, int b, int c, int d, int e, int f);
 	virtual ~Triangle();
 
-	virtual operator string() const;
+	Point getBase1() const;
+	Point getBase2() const;
+	Point getSommet() const;
+
 	double calculAire() const;
+	virtual FormeGeometrique* translation(int l, int h);
+	virtual FormeGeometrique* homothetie(int x, int y, double coeff);
+
+	virtual operator string() const;
 	virtual void accept(Visitor * v) ;
 };
 

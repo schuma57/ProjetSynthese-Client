@@ -16,8 +16,19 @@ Cercle::~Cercle()
 
 double Cercle::calculAire() const
 {
-	return 3, 14 * rayon * rayon;
+	return 3,14 * rayon * rayon;
 }
+
+FormeGeometrique* Cercle::translation(int l, int h)
+{
+	return new Cercle(getNom(), centre.translation(l,h), rayon);
+}
+
+FormeGeometrique* Cercle::homothetie(int x, int y, double coeff)
+{
+	return new Cercle(getNom(), centre.homothetie(x,y,coeff), rayon*coeff);
+}
+
 
 void Cercle::accept(Visitor * v)
 {
@@ -26,5 +37,6 @@ void Cercle::accept(Visitor * v)
 
 Cercle::operator string() const
 {
-	return string("Cer");
+	string str = "Cer " + to_string(centre.getX()) + " " + to_string(centre.getY()) + " " + to_string(rayon);
+	return str;
 }

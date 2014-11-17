@@ -17,6 +17,22 @@ Triangle::~Triangle()
 }
 
 
+Point Triangle::getBase1() const
+{
+	return base1;
+}
+
+Point Triangle::getBase2() const
+{
+	return base2;
+}
+
+Point Triangle::getSommet() const
+{
+	return sommet;
+}
+
+
 double Triangle::calculAire() const
 {
 	double aire = abs( 
@@ -25,6 +41,17 @@ double Triangle::calculAire() const
 	) / 2 ;
 	return aire;
 }
+
+FormeGeometrique* Triangle::translation(int l, int h)
+{
+	return new Triangle(getNom(), base1.translation(l,h), base2.translation(l,h), sommet.translation(l,h));
+}
+
+FormeGeometrique* Triangle::homothetie(int x, int y, double coeff)
+{
+	return new Triangle(getNom(), base1.homothetie(x, y, coeff), base2.homothetie(x, y, coeff), sommet.homothetie(x, y, coeff));
+}
+
 
 void Triangle::accept(Visitor * v)
 {

@@ -14,6 +14,9 @@ public:
 
 	int getX() const;
 	int getY() const;
+
+	Point translation(int l, int h) const;
+	Point homothetie(int x, int y, double coeff) const;
 };
 
 #endif

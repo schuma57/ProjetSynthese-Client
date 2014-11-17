@@ -16,8 +16,11 @@ public:
 	Cercle(const string &, int x, int y, int r);
 	virtual ~Cercle();
 
-	virtual operator string() const;
 	double calculAire() const;
+	virtual FormeGeometrique* translation(int l, int h);
+	virtual FormeGeometrique* homothetie(int x, int y, double coeff);
+
+	virtual operator string() const;
 	virtual void accept(Visitor * v);
 };
 

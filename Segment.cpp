@@ -39,6 +39,17 @@ double Segment::calculAire() const
 	return 0;
 }
 
+FormeGeometrique* Segment::translation(int l, int h)
+{
+	return new Segment(getNom(), point1.translation(l,h), point2.translation(l,h) );
+}
+
+FormeGeometrique* Segment::homothetie(int x, int y, double coeff)
+{
+	return new Segment(getNom(), point1.homothetie(x,y,coeff), point2.homothetie(x,y,coeff) );
+}
+
+
 void Segment::accept(Visitor * v)
 {
 	v->visiteSegment(*this);

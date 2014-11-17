@@ -79,10 +79,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Cercle.h" />
+    <ClInclude Include="ConnexionTCP.h" />
     <ClInclude Include="Erreur.h" />
+    <ClInclude Include="FormeCompliquee.h" />
     <ClInclude Include="FormeGeometrique.h" />
     <ClInclude Include="FormeSimple.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Polygone.h" />
     <ClInclude Include="Segment.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="Visitor.h" />
@@ -90,10 +93,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cercle.cpp" />
+    <ClCompile Include="ConnexionTCP.cpp" />
     <ClCompile Include="Erreur.cpp" />
+    <ClCompile Include="FormeCompliquee.cpp" />
     <ClCompile Include="FormeGeometrique.cpp" />
     <ClCompile Include="FormeSimple.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Polygone.cpp" />
     <ClCompile Include="Segment.cpp" />
     <ClCompile Include="testClient.cpp" />
     <ClCompile Include="Triangle.cpp" />
