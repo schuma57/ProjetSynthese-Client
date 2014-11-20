@@ -13,7 +13,7 @@ private:
 	vector<Point> listePoints;
 
 public:
-	Polygone(const string & s);
+	Polygone(const string & s, const vector<Point> & liste);
 	virtual ~Polygone();
 
 	vector<Point> getListePoints() const;
@@ -22,6 +22,7 @@ public:
 	virtual double calculAire() const;
 	virtual FormeGeometrique* translation(int l, int h);
 	virtual FormeGeometrique* homothetie(int x, int y, double coeff);
+	virtual FormeGeometrique* rotation(int x, int y, double angle);
 
 	virtual operator string() const;
 	virtual void accept(Visitor * v);

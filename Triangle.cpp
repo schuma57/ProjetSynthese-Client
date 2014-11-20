@@ -52,6 +52,11 @@ FormeGeometrique* Triangle::homothetie(int x, int y, double coeff)
 	return new Triangle(getNom(), base1.homothetie(x, y, coeff), base2.homothetie(x, y, coeff), sommet.homothetie(x, y, coeff));
 }
 
+FormeGeometrique* Triangle::rotation(int x, int y, double angle)
+{
+	return new Triangle(getNom(), base1.rotation(x,y,angle), base2.rotation(x,y,angle), sommet.rotation(x,y,angle));
+}
+
 
 void Triangle::accept(Visitor * v)
 {

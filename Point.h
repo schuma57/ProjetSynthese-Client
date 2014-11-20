@@ -17,6 +17,7 @@ public:
 
 	Point translation(int l, int h) const;
 	Point homothetie(int x, int y, double coeff) const;
+	Point rotation(int x, int y, double angle) const;
 };
 
 #endif

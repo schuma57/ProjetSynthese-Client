@@ -49,6 +49,11 @@ FormeGeometrique* Segment::homothetie(int x, int y, double coeff)
 	return new Segment(getNom(), point1.homothetie(x,y,coeff), point2.homothetie(x,y,coeff) );
 }
 
+FormeGeometrique* Segment::rotation(int x, int y, double angle)
+{
+	return new Segment(getNom(), point1.rotation(x,y,angle) , point2.rotation(x,y,angle) );
+}
+
 
 void Segment::accept(Visitor * v)
 {

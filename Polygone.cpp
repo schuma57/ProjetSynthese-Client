@@ -1,7 +1,7 @@
 #include "Polygone.h"
 #include "Visitor.h"
 
-Polygone::Polygone(const string & s) : FormeSimple(s)
+Polygone::Polygone(const string & s, const vector<Point> & liste) : FormeSimple(s), listePoints(liste)
 {
 }
 
@@ -23,17 +23,31 @@ void Polygone::ajouterPoint(int x, int y)
 
 double Polygone::calculAire() const
 {
-	return 0;
+	return 0; //TODO
 }
 
 FormeGeometrique* Polygone::translation(int l, int h)
 {
-	return NULL;
+	vector<Point> temp;
+	for (auto point : listePoints)
+		temp.push_back(point.translation(l,h));
+	return new Polygone(getNom(), temp);
 }
 
 FormeGeometrique* Polygone::homothetie(int x, int y, double coeff)
 {
-	return NULL;
+	vector<Point> temp;
+	for (auto point : listePoints)
+		temp.push_back(point.homothetie(x, y, coeff));
+	return new Polygone(getNom(), temp);
+}
+
+FormeGeometrique* Polygone::rotation(int x, int y, double angle)
+{
+	vector<Point> temp;
+	for (auto point : listePoints)
+		temp.push_back(point.rotation(x, y, angle));
+	return new Polygone(getNom(), temp);
 }
 
 
@@ -44,6 +58,8 @@ void Polygone::accept(Visitor * v)
 
 Polygone::operator string() const
 {
-	string str = "Poly ";
+	string str = "Poly";
+	for (auto point : listePoints)
+		str += " " + to_string(point.getX()) + " " + to_string(point.getY());
 	return str;
 }

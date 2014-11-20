@@ -19,6 +19,7 @@ public:
 	double calculAire() const;
 	virtual FormeGeometrique* translation(int l, int h);
 	virtual FormeGeometrique* homothetie(int x, int y, double coeff);
+	virtual FormeGeometrique* rotation(int x, int y, double angle);
 
 	virtual operator string() const;
 	virtual void accept(Visitor * v);

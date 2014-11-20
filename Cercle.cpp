@@ -29,6 +29,11 @@ FormeGeometrique* Cercle::homothetie(int x, int y, double coeff)
 	return new Cercle(getNom(), centre.homothetie(x,y,coeff), rayon*coeff);
 }
 
+FormeGeometrique* Cercle::rotation(int x, int y, double angle)
+{
+	return new Cercle(getNom(), centre.rotation(x,y,angle), rayon);
+}
+
 
 void Cercle::accept(Visitor * v)
 {

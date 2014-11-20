@@ -29,12 +29,26 @@ double FormeCompliquee::calculAire() const
 
 FormeGeometrique* FormeCompliquee::translation(int l, int h)
 {
-	return NULL;
+	FormeCompliquee* resultat = new FormeCompliquee(getNom());
+	for (auto forme : this->getListeFormes())
+		resultat->ajouterForme(forme->translation(l,h));
+	return resultat;
 }
 
 FormeGeometrique* FormeCompliquee::homothetie(int x, int y, double coeff)
 {
-	return NULL;
+	FormeCompliquee* resultat = new FormeCompliquee(getNom());
+	for (auto forme : this->getListeFormes())
+		resultat->ajouterForme(forme->homothetie(x, y, coeff));
+	return resultat;
+}
+
+FormeGeometrique* FormeCompliquee::rotation(int x, int y, double angle)
+{
+	FormeCompliquee* resultat = new FormeCompliquee(getNom());
+	for (auto forme : this->getListeFormes())
+		resultat->ajouterForme(forme->rotation(x, y, angle));
+	return resultat;
 }
 
 
