@@ -13,7 +13,7 @@ ExpertLecturePolygone::~ExpertLecturePolygone()
 
 FormeGeometrique* ExpertLecturePolygone::expertAction(const string & forme) const
 {
-	vector<string> tabStrings = this->explode(forme);
+	vector<string> tabStrings = this->explode(forme, ' ');
 
 	if (tabStrings[0] != "Poly")
 	{

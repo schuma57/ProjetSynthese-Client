@@ -14,11 +14,11 @@ void ExpertLecture::setSuivant(ExpertLecture* expert)
 	suivant = expert;
 }
 
-vector<string> ExpertLecture::explode(const string & str) const
+vector<string> ExpertLecture::explode(const string & str, char delimiter) const
 {
 	istringstream split(str);
 	vector<string> tokens;
-	for (string each; getline(split, each, ' '); tokens.push_back(each));
+	for (string each; getline(split, each, delimiter); tokens.push_back(each));
 
 	return tokens;
 }

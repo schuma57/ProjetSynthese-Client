@@ -17,11 +17,7 @@ FormeGeometrique* ExpertLectureFormeCompliquee::expertAction(const string & form
 	ExpertLectureFacade expert;
 	istringstream split(forme);
 
-	//vector<string> masterTab;
-	//for (string each; getline(split, each, '#'); masterTab.push_back(each));
-
-	vector<string> tabStrings;
-	for (string each; getline(split, each, '/'); tabStrings.push_back(each));
+	vector<string> tabStrings = this->explode(forme, '/');
 
 	if ( tabStrings[0] != "Comp")
 	{
@@ -33,12 +29,31 @@ FormeGeometrique* ExpertLectureFormeCompliquee::expertAction(const string & form
 		cout << "c'est une forme compliquee" << endl;
 		FormeCompliquee* fComp = new FormeCompliquee(Couleur::getCouleurFromString(tabStrings[1]));
 		
-		//string temp;
+		string temp;
 		size_t i = 2;
 		while (i < tabStrings.size())
 		{
-			fComp->ajouterForme(expert.recevoirForme(tabStrings[i]));
-			i++;
+			if (tabStrings[i] != "Comp")
+			{
+				if (tabStrings[i] != "#")
+					fComp->ajouterForme(expert.recevoirForme(tabStrings[i]));
+				i++;
+			}
+			else //if == "Comp" => si la forme est compliquee
+			{
+				size_t j = i;
+				while (tabStrings[j] != "#")
+					j++;
+
+				while (i <= j)
+				{
+					temp += tabStrings[i] + "/";
+					i++;
+				}
+				cout << temp << endl;
+				fComp->ajouterForme(expert.recevoirForme(temp));
+				i ++;
+			}
 		}
 
 		return fComp;

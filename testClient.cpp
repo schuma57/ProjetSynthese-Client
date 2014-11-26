@@ -74,10 +74,11 @@ int main()
 	//polygone.sauvegarde("test.txt");
 	//forme.sauvegarde("compliquee.txt");
 
-	vector<FormeGeometrique*> formes = FormeGeometrique::charger("compliquee.txt");
+	vector<FormeGeometrique*> formes = FormeGeometrique::charger("ultra_compliquee.txt");
 
 	for (auto f : formes)
 		f->accept(&v);
+		//cout << string(*f) << endl;
 
 	return 0;
 }

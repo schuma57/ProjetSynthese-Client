@@ -74,7 +74,7 @@ FormeCompliquee::operator string() const
 	for (auto forme : listeFormes)
 		str += "/" + string(*forme);
 	
-	return str;
+	return str+"/#";
 }
 
 void FormeCompliquee::accept(Visitor * v)

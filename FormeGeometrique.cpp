@@ -8,7 +8,7 @@
 
 #define L 200
 
-FormeGeometrique::FormeGeometrique(const Couleur::couleurs & color) : couleur(color)
+FormeGeometrique::FormeGeometrique(const Couleur::couleurs & color) : couleur(color), libre(true)
 {
 }
 

@@ -1,11 +1,27 @@
-﻿La génération a démarré 26/11/2014 09:38:46.
+﻿La génération a démarré 26/11/2014 12:23:00.
      1>Projet "C:\Users\Flo\Documents\L3\ProjetSynthese\ProjetSynthese\ProjetSynthese.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt ExpertLectureFormeCompliquee.cpp ExpertLecturePolygone.cpp FormeCompliquee.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Cercle.cpp ExpertLecture.cpp ExpertLectureCercle.cpp ExpertLectureFacade.cpp ExpertLectureFormeCompliquee.cpp ExpertLecturePolygone.cpp ExpertLectureSegment.cpp ExpertLectureTriangle.cpp FormeCompliquee.cpp FormeGeometrique.cpp FormeSimple.cpp LectureProcess.cpp Polygone.cpp Segment.cpp Triangle.cpp Visitor.cpp VisitorTCP.cpp testClient.cpp
+         VisitorTCP.cpp
+         Génération de code en cours...
+         Ignoré... (aucune modification pertinente détectée)
+         testClient.cpp
+         Visitor.cpp
+         Triangle.cpp
+         Segment.cpp
+         Polygone.cpp
+         LectureProcess.cpp
+         FormeSimple.cpp
+         FormeGeometrique.cpp
          FormeCompliquee.cpp
+         ExpertLectureTriangle.cpp
+         ExpertLectureSegment.cpp
          ExpertLecturePolygone.cpp
          ExpertLectureFormeCompliquee.cpp
-         Génération de code en cours...
+         ExpertLectureFacade.cpp
+         ExpertLectureCercle.cpp
+         ExpertLecture.cpp
+         Cercle.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.lib" /MACHINE:X86 Debug\Cercle.obj
          Debug\ConnexionTCP.obj
@@ -36,4 +52,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:20.57
+Temps écoulé 00:00:16.70

@@ -12,7 +12,7 @@ ExpertLectureSegment::~ExpertLectureSegment()
 
 FormeGeometrique* ExpertLectureSegment::expertAction(const string & forme) const
 {
-	vector<string> tabStrings = this->explode(forme);
+	vector<string> tabStrings = this->explode(forme, ' ');
 
 	if (tabStrings[0] != "Seg")
 	{

@@ -20,7 +20,7 @@ public:
 	void setSuivant(ExpertLecture* expert);
 	virtual FormeGeometrique* expertAction(const string & forme) const = 0;
 
-	vector<string> explode(const string & str) const;
+	vector<string> explode(const string & str, char delimiter) const;
 };
 
 #endif
