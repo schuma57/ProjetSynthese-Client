@@ -17,8 +17,8 @@ FormeGeometrique* ExpertLectureFormeCompliquee::expertAction(const string & form
 	ExpertLectureFacade expert;
 	istringstream split(forme);
 
-	vector<string> masterTab;
-	for (string each; getline(split, each, '/'); masterTab.push_back(each));
+	//vector<string> masterTab;
+	//for (string each; getline(split, each, '#'); masterTab.push_back(each));
 
 	vector<string> tabStrings;
 	for (string each; getline(split, each, '/'); tabStrings.push_back(each));

@@ -70,11 +70,11 @@ FormeGeometrique* FormeCompliquee::rotation(int x, int y, double angle)
 
 FormeCompliquee::operator string() const
 {
-	string str = "#/Comp/" + getCouleurToString();
+	string str = "Comp/" + getCouleurToString();
 	for (auto forme : listeFormes)
 		str += "/" + string(*forme);
 	
-	return str+"/#";
+	return str;
 }
 
 void FormeCompliquee::accept(Visitor * v)
