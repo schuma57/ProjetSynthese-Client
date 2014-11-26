@@ -1,15 +1,27 @@
-﻿La génération a démarré 20/11/2014 19:48:49.
+﻿La génération a démarré 26/11/2014 09:38:46.
      1>Projet "C:\Users\Flo\Documents\L3\ProjetSynthese\ProjetSynthese\ProjetSynthese.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt testClient.cpp
-         testClient.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt ExpertLectureFormeCompliquee.cpp ExpertLecturePolygone.cpp FormeCompliquee.cpp
+         FormeCompliquee.cpp
+         ExpertLecturePolygone.cpp
+         ExpertLectureFormeCompliquee.cpp
+         Génération de code en cours...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.lib" /MACHINE:X86 Debug\Cercle.obj
          Debug\ConnexionTCP.obj
+         Debug\Couleur.obj
          Debug\Erreur.obj
+         Debug\ExpertLecture.obj
+         Debug\ExpertLectureCercle.obj
+         Debug\ExpertLectureFacade.obj
+         Debug\ExpertLectureFormeCompliquee.obj
+         Debug\ExpertLecturePolygone.obj
+         Debug\ExpertLectureSegment.obj
+         Debug\ExpertLectureTriangle.obj
          Debug\FormeCompliquee.obj
          Debug\FormeGeometrique.obj
          Debug\FormeSimple.obj
+         Debug\LectureProcess.obj
          Debug\Point.obj
          Debug\Polygone.obj
          Debug\Segment.obj
@@ -18,8 +30,10 @@
          Debug\Visitor.obj
          Debug\VisitorTCP.obj
          ProjetSynthese.vcxproj -> C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Flo\Documents\L3\ProjetSynthese\Debug\ProjetSynthese.bsc" /n Debug\Cercle.sbr Debug\ConnexionTCP.sbr Debug\Couleur.sbr Debug\Erreur.sbr Debug\ExpertLecture.sbr Debug\ExpertLectureCercle.sbr Debug\ExpertLectureFacade.sbr Debug\ExpertLectureFormeCompliquee.sbr Debug\ExpertLecturePolygone.sbr Debug\ExpertLectureSegment.sbr Debug\ExpertLectureTriangle.sbr Debug\FormeCompliquee.sbr Debug\FormeGeometrique.sbr Debug\FormeSimple.sbr Debug\LectureProcess.sbr Debug\Point.sbr Debug\Polygone.sbr Debug\Segment.sbr Debug\testClient.sbr Debug\Triangle.sbr Debug\Visitor.sbr Debug\VisitorTCP.sbr
      1>Génération du projet "C:\Users\Flo\Documents\L3\ProjetSynthese\ProjetSynthese\ProjetSynthese.vcxproj" terminée (Build cible(s)).
 
 La génération a réussi.
 
-Temps écoulé 00:00:03.91
+Temps écoulé 00:00:20.57

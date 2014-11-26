@@ -12,8 +12,8 @@ private:
 	int rayon;
 
 public:
-	Cercle(const string &, const Point &, int r);
-	Cercle(const string &, int x, int y, int r);
+	Cercle(const Couleur::couleurs &, const Point &, int r);
+	Cercle(const Couleur::couleurs &, int x, int y, int r);
 	virtual ~Cercle();
 
 	double calculAire() const;

@@ -12,8 +12,8 @@ private:
 	Point point2;
 
 public:
-	Segment(const string &, const Point & p1, const Point & p2);
-	Segment(const string &, int a, int b, int c, int d);
+	Segment(const Couleur::couleurs &, const Point & p1, const Point & p2);
+	Segment(const Couleur::couleurs &, int a, int b, int c, int d);
 	virtual ~Segment();
 
 	Point getPoint1() const;

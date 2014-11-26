@@ -12,7 +12,7 @@ private:
 	vector<FormeGeometrique*> listeFormes;
 
 public:
-	FormeCompliquee(const string &);
+	FormeCompliquee(const Couleur::couleurs &);
 	virtual ~FormeCompliquee();
 
 	void ajouterForme(FormeGeometrique*);

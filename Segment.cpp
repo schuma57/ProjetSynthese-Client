@@ -2,11 +2,11 @@
 #include "Visitor.h"
 
 
-Segment::Segment(const string & s, const Point & p1, const Point & p2) : FormeSimple(s), point1(p1), point2(p2)
+Segment::Segment(const Couleur::couleurs & c, const Point & p1, const Point & p2) : FormeSimple(c), point1(p1), point2(p2)
 {
 }
 
-Segment::Segment(const string & s, int a, int b, int c, int d) : FormeSimple(s), point1(a,b), point2(c,d)
+Segment::Segment(const Couleur::couleurs & color, int a, int b, int c, int d) : FormeSimple(color), point1(a,b), point2(c,d)
 {
 }
 
@@ -41,17 +41,17 @@ double Segment::calculAire() const
 
 FormeGeometrique* Segment::translation(int l, int h)
 {
-	return new Segment(getNom(), point1.translation(l,h), point2.translation(l,h) );
+	return new Segment(getCouleur(), point1.translation(l,h), point2.translation(l,h) );
 }
 
 FormeGeometrique* Segment::homothetie(int x, int y, double coeff)
 {
-	return new Segment(getNom(), point1.homothetie(x,y,coeff), point2.homothetie(x,y,coeff) );
+	return new Segment(getCouleur(), point1.homothetie(x,y,coeff), point2.homothetie(x,y,coeff) );
 }
 
 FormeGeometrique* Segment::rotation(int x, int y, double angle)
 {
-	return new Segment(getNom(), point1.rotation(x,y,angle) , point2.rotation(x,y,angle) );
+	return new Segment(getCouleur(), point1.rotation(x,y,angle) , point2.rotation(x,y,angle) );
 }
 
 
@@ -62,7 +62,7 @@ void Segment::accept(Visitor * v)
 
 Segment::operator string() const
 {
-	string str = "Seg "
+	string str = "Seg " + getCouleurToString() + " "
 		+ to_string(point1.getX()) + " " + to_string(point1.getY()) + " "
 		+ to_string(point2.getX()) + " " + to_string(point2.getY());
 

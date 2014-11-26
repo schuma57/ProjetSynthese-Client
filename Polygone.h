@@ -13,7 +13,7 @@ private:
 	vector<Point> listePoints;
 
 public:
-	Polygone(const string & s, const vector<Point> & liste);
+	Polygone(const Couleur::couleurs & c, const vector<Point> & liste);
 	virtual ~Polygone();
 
 	vector<Point> getListePoints() const;

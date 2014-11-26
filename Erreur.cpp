@@ -29,4 +29,3 @@ ostream & operator << (ostream & os, const Erreur & erreur)
 	os << (string)erreur;
 	return os;
 }
-

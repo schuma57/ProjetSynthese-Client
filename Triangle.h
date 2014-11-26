@@ -13,8 +13,8 @@ private:
 	Point sommet;
 
 public:
-	Triangle(const string &, const Point & p1, const Point & p2, const Point & p3);
-	Triangle(const string &, int a, int b, int c, int d, int e, int f);
+	Triangle(const Couleur::couleurs &, const Point & p1, const Point & p2, const Point & p3);
+	Triangle(const Couleur::couleurs &, int a, int b, int c, int d, int e, int f);
 	virtual ~Triangle();
 
 	Point getBase1() const;

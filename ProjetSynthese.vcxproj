@@ -53,11 +53,15 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -80,10 +84,19 @@
   <ItemGroup>
     <ClInclude Include="Cercle.h" />
     <ClInclude Include="ConnexionTCP.h" />
+    <ClInclude Include="Couleur.h" />
     <ClInclude Include="Erreur.h" />
+    <ClInclude Include="ExpertLecture.h" />
+    <ClInclude Include="ExpertLectureCercle.h" />
+    <ClInclude Include="ExpertLectureFacade.h" />
+    <ClInclude Include="ExpertLectureFormeCompliquee.h" />
+    <ClInclude Include="ExpertLecturePolygone.h" />
+    <ClInclude Include="ExpertLectureSegment.h" />
+    <ClInclude Include="ExpertLectureTriangle.h" />
     <ClInclude Include="FormeCompliquee.h" />
     <ClInclude Include="FormeGeometrique.h" />
     <ClInclude Include="FormeSimple.h" />
+    <ClInclude Include="LectureProcess.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Polygone.h" />
     <ClInclude Include="Segment.h" />
@@ -94,10 +107,19 @@
   <ItemGroup>
     <ClCompile Include="Cercle.cpp" />
     <ClCompile Include="ConnexionTCP.cpp" />
+    <ClCompile Include="Couleur.cpp" />
     <ClCompile Include="Erreur.cpp" />
+    <ClCompile Include="ExpertLecture.cpp" />
+    <ClCompile Include="ExpertLectureCercle.cpp" />
+    <ClCompile Include="ExpertLectureFacade.cpp" />
+    <ClCompile Include="ExpertLectureFormeCompliquee.cpp" />
+    <ClCompile Include="ExpertLecturePolygone.cpp" />
+    <ClCompile Include="ExpertLectureSegment.cpp" />
+    <ClCompile Include="ExpertLectureTriangle.cpp" />
     <ClCompile Include="FormeCompliquee.cpp" />
     <ClCompile Include="FormeGeometrique.cpp" />
     <ClCompile Include="FormeSimple.cpp" />
+    <ClCompile Include="LectureProcess.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Polygone.cpp" />
     <ClCompile Include="Segment.cpp" />
