@@ -1,3 +1,7 @@
+//!
+//! \file LectureProcess.cpp
+//!
+
 #include "LectureProcess.h"
 
 

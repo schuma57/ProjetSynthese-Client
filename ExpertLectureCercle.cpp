@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLectureCercle.cpp
+//!
+
 #include "ExpertLectureCercle.h"
 #include "Cercle.h"
 

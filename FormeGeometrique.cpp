@@ -1,3 +1,7 @@
+//!
+//! \file FormeGeometrique.cpp
+//!
+
 #include <sstream>
 #include <fstream>
 #include <winsock2.h>

@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLectureSegment.cpp
+//!
+
 #include "ExpertLectureSegment.h"
 #include "Segment.h"
 

@@ -1,3 +1,7 @@
+//!
+//! \file Point.cpp
+//!
+
 #include <cmath>
 #include "Point.h"
 using namespace std;

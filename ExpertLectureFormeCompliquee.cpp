@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLectureFormeCompliquee.cpp
+//!
+
 #include <sstream>
 #include "ExpertLectureFormeCompliquee.h"
 #include "FormeCompliquee.h"

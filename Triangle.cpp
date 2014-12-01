@@ -1,3 +1,7 @@
+//!
+//! \file Triangle.cpp
+//!
+
 #include "Triangle.h"
 #include "Visitor.h"
 

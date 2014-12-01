@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLecture.cpp
+//!
+
 #include <sstream>
 #include "ExpertLecture.h"
 
@@ -14,11 +18,11 @@ void ExpertLecture::setSuivant(ExpertLecture* expert)
 	suivant = expert;
 }
 
-vector<string> ExpertLecture::explode(const string & str, char delimiter) const
+vector<string> ExpertLecture::explode(const string & str, char delimiteur) const
 {
 	istringstream split(str);
 	vector<string> tokens;
-	for (string each; getline(split, each, delimiter); tokens.push_back(each));
+	for (string each; getline(split, each, delimiteur); tokens.push_back(each));
 
 	return tokens;
 }

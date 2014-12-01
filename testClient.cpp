@@ -3,15 +3,24 @@
 #include "Erreur.h"
 using namespace std;
 
+//!
+//! \file testClient.cpp
+//! \brief Fichier contenant le main()
+//!
+
+
 #include "Couleur.h"
 #include "Triangle.h"
 #include "VisitorTCP.h"
 
+//!
+//! \fn int main (void)
+//!
 int main()
 {
 	VisitorTCP v;
 
-	//Triangle triangle(Couleur::GREEN, 0, 0, 0, 100, 100, 100);
+	Triangle triangle(Couleur::GREEN, 0, 0, 0, 100, 100, 100);
 	//Segment segment(Couleur::BLUE, 50, 70, 50, 270);
 	//Cercle cercle(Couleur::RED, 100, 100, 60);
 	
@@ -43,14 +52,14 @@ int main()
 	//cout << "aire = " << polygone.calculAire() << endl;
 	//cout << "" << string(triangle) << endl;
 
-	//triangle.accept(&v);
+	triangle.accept(&v);
 	//segment.accept(&v);
 	//cercle.accept(&v);
 	//polygone.accept(&v);
 
-	//triangle.translation(300, 0)->accept(&v);
-	//triangle.homothetie(0,0,2)->accept(&v);
-	//triangle.rotation(0, 0, 90)->accept(&v);
+	triangle.translation(300, 0)->accept(&v);
+	triangle.homothetie(0,0,2)->accept(&v);
+	triangle.rotation(0, 0, 90)->accept(&v);
 	//cercle.translation(30, 30)->accept(&v);
 	///cercle.homothetie(200, 200, 1.5)->accept(&v);
 	//cercle.rotation(50, 70, -40)->accept(&v);
@@ -74,11 +83,11 @@ int main()
 	//polygone.sauvegarde("test.txt");
 	//forme.sauvegarde("compliquee.txt");
 
-	vector<FormeGeometrique*> formes = FormeGeometrique::charger("ultra_compliquee.txt");
+	/*vector<FormeGeometrique*> formes = FormeGeometrique::charger("ultra_compliquee.txt");
 
 	for (auto f : formes)
 		f->accept(&v);
 		//cout << string(*f) << endl;
-
+		*/
 	return 0;
 }

@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLectureTriangle.cpp
+//!
+
 #include "ExpertLectureTriangle.h"
 #include "Triangle.h"
 

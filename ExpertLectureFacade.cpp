@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLectureFacade.cpp
+//!
+
 #include "ExpertLectureFacade.h"
 #include "ExpertLectureSegment.h"
 #include "ExpertLectureTriangle.h"

@@ -1,3 +1,7 @@
+//!
+//! \file FormeSimple.cpp
+//!
+
 #include "FormeSimple.h"
 
 

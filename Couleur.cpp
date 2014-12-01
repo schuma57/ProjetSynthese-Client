@@ -1,9 +1,16 @@
+//!
+//! \file Couleur.cpp
+//!
+
 #include <map>
 #include "Couleur.h"
 
 
 string Couleur::tableCouleurs[] = { "BLACK", "BLUE", "RED", "GREEN", "YELLOW", "CYAN" };
 
+//!
+//! dico permet d'associer une Couleur a une string
+//!
 map<string, Couleur::couleurs> dico = {
 		{ "BLACK", Couleur::BLACK }, { "BLUE", Couleur::BLUE }, 
 		{ "RED", Couleur::RED }, { "GREEN", Couleur::GREEN },

@@ -1,3 +1,7 @@
+//!
+//! \file FormeCompliquee.cpp
+//!
+
 #include "FormeCompliquee.h"
 #include "VisitorTCP.h"
 #include "Erreur.h"

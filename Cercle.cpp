@@ -1,3 +1,7 @@
+//!
+//! \file Cercle.cpp
+//!
+
 #include "Cercle.h"
 #include "Visitor.h"
 

@@ -1,3 +1,7 @@
+//!
+//! \file Polygone.cpp
+//!
+
 #include "Polygone.h"
 #include "Visitor.h"
 
@@ -12,12 +16,6 @@ Polygone::~Polygone()
 vector<Point> Polygone::getListePoints() const
 {
 	return listePoints;
-}
-
-void Polygone::ajouterPoint(int x, int y)
-{
-	Point p(x, y);
-	listePoints.push_back(p);
 }
 
 

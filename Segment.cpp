@@ -1,3 +1,7 @@
+//!
+//! \file Segment.cpp
+//!
+
 #include "Segment.h"
 #include "Visitor.h"
 

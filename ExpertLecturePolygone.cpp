@@ -1,3 +1,7 @@
+//!
+//! \file ExpertLecturePolygone.cpp
+//!
+
 #include "ExpertLecturePolygone.h"
 #include "Polygone.h"
 

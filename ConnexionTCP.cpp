@@ -1,3 +1,7 @@
+//!
+//! \file ConnexionTCP.cpp
+//!
+
 #include "ConnexionTCP.h"
 
 //--------------------- static --------------------------------

@@ -1,3 +1,7 @@
+//!
+//! \file Erreur.cpp
+//!
+
 #include "Erreur.h"
 
 

@@ -1,3 +1,7 @@
+//!
+//! \file VisitorTCP.cpp
+//!
+
 #include <vector>
 #include "ConnexionTCP.h"
 #include "VisitorTCP.h"
@@ -36,5 +40,4 @@ void VisitorTCP::visiteFormeCompliquee(const FormeCompliquee & compliquee) const
 	VisitorTCP v;
 	for (auto forme : compliquee.getListeFormes())
 		forme->accept(&v);
-		//ConnexionTCP::getConnexionTCP()->envoyerForme( string( *forme ) );
 }
