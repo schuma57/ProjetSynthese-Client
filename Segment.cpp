@@ -10,7 +10,7 @@ Segment::Segment(const Couleur::couleurs & c, const Point & p1, const Point & p2
 {
 }
 
-Segment::Segment(const Couleur::couleurs & color, int a, int b, int c, int d) : FormeSimple(color), point1(a,b), point2(c,d)
+Segment::Segment(const Couleur::couleurs & color, double a, double b, double c, double d) : FormeSimple(color), point1(a,b), point2(c,d)
 {
 }
 
@@ -43,17 +43,17 @@ double Segment::calculAire() const
 	return 0;
 }
 
-FormeGeometrique* Segment::translation(int l, int h)
+FormeGeometrique* Segment::translation(double l, double h)
 {
 	return new Segment(getCouleur(), point1.translation(l,h), point2.translation(l,h) );
 }
 
-FormeGeometrique* Segment::homothetie(int x, int y, double coeff)
+FormeGeometrique* Segment::homothetie(double x, double y, double coeff)
 {
 	return new Segment(getCouleur(), point1.homothetie(x,y,coeff), point2.homothetie(x,y,coeff) );
 }
 
-FormeGeometrique* Segment::rotation(int x, int y, double angle)
+FormeGeometrique* Segment::rotation(double x, double y, double angle)
 {
 	return new Segment(getCouleur(), point1.rotation(x,y,angle) , point2.rotation(x,y,angle) );
 }

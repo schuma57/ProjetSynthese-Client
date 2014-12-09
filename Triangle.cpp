@@ -11,7 +11,7 @@ Triangle::Triangle(const Couleur::couleurs & color, const Point & p1, const Poin
 {
 }
 
-Triangle::Triangle(const Couleur::couleurs & color, int a, int b, int c, int d, int e, int f) :
+Triangle::Triangle(const Couleur::couleurs & color, double a, double b, double c, double d, double e, double f) :
 	FormeSimple(color), base1(a,b), base2(c,d), sommet(e,f)
 {
 }
@@ -46,17 +46,17 @@ double Triangle::calculAire() const
 	return aire;
 }
 
-FormeGeometrique* Triangle::translation(int l, int h)
+FormeGeometrique* Triangle::translation(double l, double h)
 {
 	return new Triangle(getCouleur(), base1.translation(l,h), base2.translation(l,h), sommet.translation(l,h));
 }
 
-FormeGeometrique* Triangle::homothetie(int x, int y, double coeff)
+FormeGeometrique* Triangle::homothetie(double x, double y, double coeff)
 {
 	return new Triangle(getCouleur(), base1.homothetie(x, y, coeff), base2.homothetie(x, y, coeff), sommet.homothetie(x, y, coeff));
 }
 
-FormeGeometrique* Triangle::rotation(int x, int y, double angle)
+FormeGeometrique* Triangle::rotation(double x, double y, double angle)
 {
 	return new Triangle(getCouleur(), base1.rotation(x,y,angle), base2.rotation(x,y,angle), sommet.rotation(x,y,angle));
 }

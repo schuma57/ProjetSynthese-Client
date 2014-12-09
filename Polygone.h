@@ -48,15 +48,15 @@ public:
 	//!
 	//! \brief override
 	//!
-	virtual FormeGeometrique* translation(int l, int h);
+	virtual FormeGeometrique* translation(double l, double h);
 	//!
 	//! \brief override
 	//!
-	virtual FormeGeometrique* homothetie(int x, int y, double coeff);
+	virtual FormeGeometrique* homothetie(double x, double y, double coeff);
 	//!
 	//! \brief override
 	//!
-	virtual FormeGeometrique* rotation(int x, int y, double angle);
+	virtual FormeGeometrique* rotation(double x, double y, double angle);
 
 	//!
 	//! \brief override

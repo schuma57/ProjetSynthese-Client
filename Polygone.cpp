@@ -31,7 +31,7 @@ double Polygone::calculAire() const
 	return aire;
 }
 
-FormeGeometrique* Polygone::translation(int l, int h)
+FormeGeometrique* Polygone::translation(double l, double h)
 {
 	vector<Point> temp;
 	for (auto point : listePoints)
@@ -39,7 +39,7 @@ FormeGeometrique* Polygone::translation(int l, int h)
 	return new Polygone(getCouleur(), temp);
 }
 
-FormeGeometrique* Polygone::homothetie(int x, int y, double coeff)
+FormeGeometrique* Polygone::homothetie(double x, double y, double coeff)
 {
 	vector<Point> temp;
 	for (auto point : listePoints)
@@ -47,7 +47,7 @@ FormeGeometrique* Polygone::homothetie(int x, int y, double coeff)
 	return new Polygone(getCouleur(), temp);
 }
 
-FormeGeometrique* Polygone::rotation(int x, int y, double angle)
+FormeGeometrique* Polygone::rotation(double x, double y, double angle)
 {
 	vector<Point> temp;
 	for (auto point : listePoints)

@@ -47,7 +47,7 @@ double FormeCompliquee::calculAire() const
 	return somme;
 }
 
-FormeGeometrique* FormeCompliquee::translation(int l, int h)
+FormeGeometrique* FormeCompliquee::translation(double l, double h)
 {
 	FormeCompliquee* resultat = new FormeCompliquee(getCouleur());
 	for (auto forme : this->getListeFormes())
@@ -55,7 +55,7 @@ FormeGeometrique* FormeCompliquee::translation(int l, int h)
 	return resultat;
 }
 
-FormeGeometrique* FormeCompliquee::homothetie(int x, int y, double coeff)
+FormeGeometrique* FormeCompliquee::homothetie(double x, double y, double coeff)
 {
 	FormeCompliquee* resultat = new FormeCompliquee(getCouleur());
 	for (auto forme : this->getListeFormes())
@@ -63,7 +63,7 @@ FormeGeometrique* FormeCompliquee::homothetie(int x, int y, double coeff)
 	return resultat;
 }
 
-FormeGeometrique* FormeCompliquee::rotation(int x, int y, double angle)
+FormeGeometrique* FormeCompliquee::rotation(double x, double y, double angle)
 {
 	FormeCompliquee* resultat = new FormeCompliquee(getCouleur());
 	for (auto forme : this->getListeFormes())

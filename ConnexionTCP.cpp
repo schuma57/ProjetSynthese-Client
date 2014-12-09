@@ -86,7 +86,7 @@ void ConnexionTCP::envoyerForme(string forme)
 
 	int tailleChaine = strlen(chaineConvertie);
 
-	cout << "ici recu : " + forme << endl;
+	cout << "on envoie : " + forme << endl;
 	retour = send(ConnexionTCP::sock, chaineConvertie, tailleChaine, 0);
 	if (retour == SOCKET_ERROR)
 		throw Erreur("échec de l'envoi de la requête");

@@ -60,7 +60,7 @@ public:
 	//! \param h : distance en y de la translation
 	//! \return l'image par la translation de la forme appelante 
 	//!
-	virtual FormeGeometrique* translation(int l, int h) = 0;
+	virtual FormeGeometrique* translation(double l, double h) = 0;
 	//!
 	//! \brief Homothetie de la forme
 	//! virtuelle pure
@@ -69,7 +69,7 @@ public:
 	//! \param coeff : coefficient de l'homothetie
 	//! \return l'image par l' homothetie de la forme appelante 
 	//!
-	virtual FormeGeometrique* homothetie(int x, int y, double coeff) = 0;
+	virtual FormeGeometrique* homothetie(double x, double y, double coeff) = 0;
 	//!
 	//! \brief Rotation de la forme
 	//! virtuelle pure
@@ -78,7 +78,7 @@ public:
 	//! \param angle : angle de la rotation en degres
 	//! \return l'image par la rotation de la forme appelante 
 	//!
-	virtual FormeGeometrique* rotation(int x, int y, double angle) = 0;
+	virtual FormeGeometrique* rotation(double x, double y, double angle) = 0;
 
 	//!
 	//! \brief Caster l'objet en string

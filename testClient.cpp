@@ -20,26 +20,25 @@ int main()
 {
 	VisitorTCP v;
 
-	Triangle triangle(Couleur::GREEN, 0, 0, 0, 100, 100, 100);
+	//Triangle triangle(Couleur::GREEN, 0, 0, 0, 100, 100, 100);
 	//Segment segment(Couleur::BLUE, 50, 70, 50, 270);
 	//Cercle cercle(Couleur::RED, 100, 100, 60);
 	
-	/*
 	vector<Point> points;
-	points.push_back(Point(100,30));
-	points.push_back(Point(100, 400));
-	points.push_back(Point(50, 400));
-	points.push_back(Point(50, 450));
-	points.push_back(Point(100, 450));
-	points.push_back(Point(100, 600));
-	points.push_back(Point(150, 600));
-	points.push_back(Point(150, 450));
-	points.push_back(Point(200, 450));
-	points.push_back(Point(200, 400));
-	points.push_back(Point(150, 400));
-	points.push_back(Point(150, 30));*/
+	points.push_back(Point(100,-170));
+	points.push_back(Point(100, 100));
+	points.push_back(Point(50, 100));
+	points.push_back(Point(50, 150));
+	points.push_back(Point(100, 150));
+	points.push_back(Point(100, 300));
+	points.push_back(Point(150, 300));
+	points.push_back(Point(150, 150));
+	points.push_back(Point(200, 150));
+	points.push_back(Point(200, 100));
+	points.push_back(Point(150, 100));
+	points.push_back(Point(150, -170));
 
-	//Polygone polygone(Couleur::RED, points);
+	Polygone polygone(Couleur::RED, points);
 
 
 	//FormeCompliquee forme(Couleur::BLUE);
@@ -52,14 +51,14 @@ int main()
 	//cout << "aire = " << polygone.calculAire() << endl;
 	//cout << "" << string(triangle) << endl;
 
-	triangle.accept(&v);
+	//triangle.accept(&v);
 	//segment.accept(&v);
 	//cercle.accept(&v);
-	//polygone.accept(&v);
+	polygone.accept(&v);
 
-	triangle.translation(300, 0)->accept(&v);
-	triangle.homothetie(0,0,2)->accept(&v);
-	triangle.rotation(0, 0, 90)->accept(&v);
+	//triangle.translation(300, 0)->accept(&v);
+	//triangle.homothetie(0,0,2)->accept(&v);
+	//triangle.rotation(0, 0, 90)->accept(&v);
 	//cercle.translation(30, 30)->accept(&v);
 	///cercle.homothetie(200, 200, 1.5)->accept(&v);
 	//cercle.rotation(50, 70, -40)->accept(&v);
@@ -67,8 +66,8 @@ int main()
 	//segment.homothetie(0, 0, 2)->accept(&v);
 	//segment.rotation(50, 70, -40)->accept(&v);
 
-	//polygone.translation(30, 10)->accept(&v);
-	//polygone.homothetie(0, 0, 1.5)->accept(&v);
+	polygone.translation(20, -100)->accept(&v);
+	polygone.homothetie(0, 0, 0.5)->accept(&v);
 	//polygone.rotation(450,50, -45)->accept(&v);
 
 	//forme.accept(&v);

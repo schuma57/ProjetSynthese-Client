@@ -25,12 +25,11 @@ FormeGeometrique* ExpertLectureFormeCompliquee::expertAction(const string & form
 
 	if ( tabStrings[0] != "Comp")
 	{
-		cout << "ce n'est pas une forme compliquee" << endl;
+		//cout << "ce n'est pas une forme compliquee" << endl;
 		return NULL;
 	}
 	else
 	{
-		cout << "c'est une forme compliquee" << endl;
 		FormeCompliquee* fComp = new FormeCompliquee(Couleur::getCouleurFromString(tabStrings[1]));
 		
 		string temp;
@@ -54,7 +53,7 @@ FormeGeometrique* ExpertLectureFormeCompliquee::expertAction(const string & form
 					temp += tabStrings[i] + "/";
 					i++;
 				}
-				cout << temp << endl;
+				//cout << temp << endl;
 				fComp->ajouterForme(expert.recevoirForme(temp));
 				i ++;
 			}

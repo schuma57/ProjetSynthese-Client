@@ -14,8 +14,8 @@
 class Point
 {
 private:
-	int x;
-	int y;
+	double x;
+	double y;
 
 public:
 	//!
@@ -23,14 +23,14 @@ public:
 	//! \param a : coordonne en x
 	//! \param b : coordonne en y
 	//!
-	Point(int a, int b);
+	Point(double a, double b);
 	//!
 	//! \brief Destructeur
 	//!
 	virtual ~Point();
 
-	int getX() const;
-	int getY() const;
+	double getX() const;
+	double getY() const;
 
 	//!
 	//! \brief Translation du point
@@ -38,7 +38,7 @@ public:
 	//! \param h : distance en y de la translation
 	//! \return l'image par la translation du point appelant
 	//!
-	Point translation(int l, int h) const;
+	Point translation(double l, double h) const;
 	//!
 	//! \brief Homothetie du point
 	//! \param x : x du centre de homothetie
@@ -46,8 +46,8 @@ public:
 	//! \param coeff : coefficient de l'homothetie
 	//! \return l'image par l' homothetie du point appelant 
 	//!
-	Point homothetie(int x, int y, double coeff) const;
-	Point rotation(int x, int y, double angle) const;
+	Point homothetie(double x, double y, double coeff) const;
+	Point rotation(double x, double y, double angle) const;
 };
 
 #endif

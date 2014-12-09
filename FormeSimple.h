@@ -27,15 +27,15 @@ public:
 	//!
 	//! \brief virtuelle pure
 	//!
-	virtual FormeGeometrique* translation(int l, int h) = 0;
+	virtual FormeGeometrique* translation(double l, double h) = 0;
 	//!
 	//! \brief virtuelle pure
 	//!
-	virtual FormeGeometrique* homothetie(int x, int y, double coeff) = 0;
+	virtual FormeGeometrique* homothetie(double x, double y, double coeff) = 0;
 	//!
 	//! \brief virtuelle pure
 	//!
-	virtual FormeGeometrique* rotation(int x, int y, double angle) = 0;
+	virtual FormeGeometrique* rotation(double x, double y, double angle) = 0;
 
 	virtual operator string() const = 0;
 	//!
